@@ -31,4 +31,7 @@
 .banner a {
   font-size: 80px;
   color: $light-green;
+  &:hover{
+    color: white;
+  }
 }
