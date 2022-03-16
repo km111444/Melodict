@@ -17,9 +17,9 @@
 
 .navbar-brand {
   font-family: $logo-font;
-}
-
-.navbar-light .navbar-brand {
   font-size: 26px;
   padding: 0;
+  &:hover {
+    transition: 0.8s;
+  }
 }
