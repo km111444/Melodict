@@ -18,9 +18,7 @@
             <%= cl_image_tag current_user.profile_picture.key.present? ? current_user.profile_picture.key : default_pic, crop: :fill, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%# <%= link_to "View Profile", "#", class: "dropdown-item" %>
-              <b class="m-3">Students:</b>
-              <%= link_to "My exercises", "/exercises", class: "dropdown-item" %>
-              <b class="m-3">Teachers:</b>
+              <%= link_to "Looking for exercises", "/exercises", class: "dropdown-item" %>
               <%= link_to "My exercises", "/teacher/exercises", class: "dropdown-item" %>
 
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
