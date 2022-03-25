@@ -7,15 +7,6 @@
 .banner {
   height: 100vh;
   background-color: $black;
-  // text-align: center;
-  // background-size: cover;
-  // padding: 160px 0;
-  // object-fit: cover;
-  // background-position: center;
-  // background-position-y: -184px;
-  // background-repeat: no-repeat;
-  // background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25)), url(https://images.unsplash.com/photo-1593698054590-a5b3a19565a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
-  // background: brightness(50%);
 }
 
 .banner h1 {
@@ -48,6 +39,7 @@
   padding: 10px;
   background-color: white;
   border-radius: 30px;
+  font-weight: bold;
   &:hover {
     color: $black;
   }
