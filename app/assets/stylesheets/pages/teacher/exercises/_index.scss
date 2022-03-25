@@ -1,7 +1,7 @@
 .index-ex {
   background-color: $black;
   color: white;
-  height: inherit;
+  min-height: -webkit-fill-available;
 }
 
 #button-container {
