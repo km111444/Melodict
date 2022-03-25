@@ -15,6 +15,13 @@ class User < ApplicationRecord
   has_many :exercises, dependent: :destroy
   has_many :reviews, dependent: :destroy
 
+  def self.guest
+    find_or_create_by!(email: 'hiromi@lickwars.com') do |user|
+      user.password = 123456
+      user.password_confirmation = user.password
+    end
+  end
+
   def default_values
     self.name ||= self.email[...self.email.index('@')]
   end
