@@ -42,6 +42,17 @@
   }
 }
 
+.banner .login {
+  font-size: 29px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  &:hover {
+    color: $black;
+  }
+}
+
 .portfolio p {
   font-size: 10px;
   color: white;
