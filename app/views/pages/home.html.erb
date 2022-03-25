@@ -5,7 +5,9 @@
       <div class="container">
           <%= link_to "Melodict", exercises_path, class: "navbar-brand" %>
           <p class="py-2">Challenge yourself, make music together.</p>
-          <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "login" %>
+          <% unless user_signed_in?   %>
+            <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "login" %>
+          <% end %>
       </div>
     </div>
   </div>
