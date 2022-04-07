@@ -8,7 +8,7 @@
     <% if !user_signed_in?   %>
       <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "login" %>
     <% else %>
-      <%= link_to "エクササイズを始める", exercises_path, class: "start-ex" %>
+      <%= link_to "エクササイズを探す", exercises_path, class: "start-ex" %>
     <% end %>
   </div>
 </div>
