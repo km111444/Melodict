@@ -1,19 +1,18 @@
 
-<div id="particles-js">
-  <div class="count-particles">
-    <div class="banner d-flex align-items-center">
-      <div class="container">
-          <%= link_to "Melodict", exercises_path, class: "navbar-brand" %>
-          <p class="py-2">Challenge yourself, make music together.</p>
-          <% unless user_signed_in?   %>
-            <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "login" %>
-          <% end %>
-      </div>
-    </div>
+<%# <div id="particles-js"> %>
+  <%# <div class="count-particles"> %>
+<div class="banner d-flex align-items-center">
+  <div class="container">
+    <h1 class="navbar-brand">Melodict</h1>
+    <p class="py-2">Challenge yourself, make music together.</p>
+    <% if !user_signed_in?   %>
+      <%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class: "login" %>
+    <% else %>
+      <%= link_to "エクササイズを始める", exercises_path, class: "start-ex" %>
+    <% end %>
   </div>
-  <div class="portfolio">
-    <p>2022Winter  Kanae Maki</p>
-  </div>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </div>
+  <%# </div> %>
+  <%# <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> %>
+<%# </div> %>
