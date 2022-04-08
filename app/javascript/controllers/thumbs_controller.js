@@ -9,10 +9,7 @@
 import { Controller } from "stimulus";
 export default class extends Controller {
   static targets = ["thumbs"];
-
-  connect() {
-    console.log("connected");
-  }
+  
   toggle() {
     console.log("toggle");
     this.thumbsTarget.classList.toggle("btn-dark");

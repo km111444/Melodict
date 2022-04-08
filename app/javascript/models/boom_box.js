@@ -10,8 +10,8 @@ export class BoomBox {
       velocities: 5 });
     this.piano.connect(vol);
     this.piano.load().then(() => {
-      console.log("loaded! target:", target);
       target.disabled = false
+      target.innerHTML = target.dataset.playHtml
     });
     this.breakLoop = false;
   }

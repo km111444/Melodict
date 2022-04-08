@@ -3,17 +3,12 @@
   <%= link_to exercise_path(exercise), class: "text-decoration-none text-black d-flex flex-grow-1" do  %>
     <div class="d-flex flex-column justify-content-evenly p-3 ms-4">
         <p class="mb-0"><%= exercise.name %></p>
-
     </div>
   <% end %>
   <div class="d-flex align-items-center justify-content-end me-5">
-    <div class="teacher-ex-card-button me-3" data-bs-toggle="modal" data-bs-target="#commentModal<%=exercise.id%>">
-      <i class="mb-0">View Comments</i>
-    </div>
     <%= link_to edit_exercise_path(exercise), class: "teacher-ex-card-button" do %>
       <i class="mb-0">Edit</i>
     <% end %>
   </div>
 </div>
-
 <%= render "modal", {exercise: exercise} %>
