@@ -41,8 +41,9 @@
   background-color: white;
   border-radius: 30px;
   font-weight: bold;
+  color: $black;
   &:hover {
-    color: $black;
+    color: $light-green;
   }
 }
 
